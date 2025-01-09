@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # basic script to put a fix into place on a VyOS router VM in environments where it's 
-# cloned (and not lose config due to new UUID and MAC addresses on interfaces)
+# cloned (and not lose config due to new UUID and MAC addresses on interfaces). ONLY 
+# run this on a VyOS router. Tested on v1.4.x nightly builds.
 
 # write out current crontab
 crontab -l > newcron
